@@ -1,44 +1,10 @@
-// import { useState } from "react";
-
-// export default function Updater() {
-//   const [names, setNames] = useState([]);
-
-//   function addNames() {
-//     const newName = document.getElementById("friendList").value;
-//     document.getElementById("friendList").value = "";
-//     //setNames((prevN) => [...prevN, newNames]);
-//     setNames([...names, newName]);
-//   }
-
-//   function removeFriend(index) {
-//     setNames(names.filter((_, i) => i !== index));
-//   }
-//   return (
-//     <>
-//       <div>
-//         <input type="text" id="friendList" placeholder="Enter Friends Name" />
-//         <button onClick={addNames}>Add Friend</button>
-//       </div>
-
-//       <h2>List of Friends</h2>
-//       <ol>
-//         {names.map((name, index) => (
-//           <li key={index} onClick={() => removeFriend(index)}>
-//             {name}
-//           </li>
-//         ))}
-//       </ol>
-//     </>
-//   );
-// }
-
 import { useState } from "react";
 import { FaTrash } from "react-icons/fa";
 
 export default function Updater() {
   const [names, setNames] = useState([]);
 
-  const sortedNames = foods.sort((a, b) => a.localeCompare(b));
+  const sortedNames = names.sort((a, b) => a.localeCompare(b));
 
   function addNames() {
     const newName = document.getElementById("friendList").value;
