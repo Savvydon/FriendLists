@@ -38,6 +38,8 @@ import { FaTrash } from "react-icons/fa";
 export default function Updater() {
   const [names, setNames] = useState([]);
 
+  const sortedNames = foods.sort((a, b) => a.localeCompare(b));
+
   function addNames() {
     const newName = document.getElementById("friendList").value;
     document.getElementById("friendList").value = "";
@@ -63,7 +65,7 @@ export default function Updater() {
       </div>
       <h2>List of Friends</h2>
       <ol className="friend-list">
-        {names.map((name, index) => (
+        {sortedNames.map((name, index) => (
           <li key={index}>
             {name}
             <FaTrash
