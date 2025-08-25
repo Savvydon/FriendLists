@@ -1,13 +1,10 @@
 {
-  "homepage": " https://github.io/Savvydon/Friend-List",
+  "homepage": "https://Savvydon.github.io/FriendLists",
   "name": "friend-lists",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
